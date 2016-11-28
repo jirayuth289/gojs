@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--	Gojs-->
+	<script src="lib/gojs/go.js"></script>
+	<script src="lib/gojs/go-debug.js"></script>
+	<!--    angular-->
+	<script src="lib/angular/angular.min.js"></script>
+	<!--	boostrap-->
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
+
+	<script src="js/minimal.js"></script>
+</head>
+
+<body ng-app="myApp">
+	<div class="container" ng-controller="myCtrl">
+		<div class="col-md-12">
+			<div id="myDiagramDiv" style="border: solid 1px black; width:400px; height:400px"></div>
+			<button class="btn btn-primary" type="button" ng-click="test()">submit</button>
+			<span>{{x}}</span>
+		</div>
+	</div>
+
+	<!--	jquery-->
+	<script src="lib/jquery/jquery-1.12.4.min.js"></script>
+	<!--	boostrap-->
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
